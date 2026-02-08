@@ -39,7 +39,10 @@
 .mre{
     border: 1px solid white;
     padding: 10px;
-    border-radius: 2px; 
+    border-radius: 2px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
 }
 
 /* .know_me{
@@ -286,4 +289,5 @@ align-items: center;
     }
 
     
+
 }
