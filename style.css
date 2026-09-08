@@ -1,0 +1,713 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: black;
+}
+
+.text {
+    color: white;
+}
+
+.pad {
+    padding: 20px 20px;
+}
+
+.portfolio {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+.social_links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social_links img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.header_lines {
+    margin-top: 8px;
+}
+
+.header_lines div {
+    border-top: 1px solid white;
+    width: 20%;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.know_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.profile_image_container {
+    flex-shrink: 0;
+}
+
+.img_size {
+    width: 370px;
+    height: 370px;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro_content {
+    max-width: 600px;
+}
+
+.text_style {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.intro_text {
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    margin-top: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#scrollBtn {
+    border: 1px solid white;
+    min-width: 150px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.mre {
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 2px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.section_line {
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills_section {
+    margin-top: 40px;
+}
+
+.skills {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    border: 1px solid white;
+    padding: 12px 25px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: fit-content;
+}
+
+.skill img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.sat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.about_text {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.about_stats {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt_me {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.orange {
+    color: orangered;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects_section {
+    margin-top: 70px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 100%;
+    margin-top: 30px;
+
+    align-items: start;
+    justify-content: start;
+}
+
+.project_card {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================
+   PROJECT IMAGES
+========================= */
+
+/*
+   All three project images have
+   exactly the same image box size
+   on desktop.
+*/
+
+.project_pics_one,
+.project_pics_two {
+    width: 100%;
+    height: 210px;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: black;
+
+    border-radius: 5px;
+}
+
+
+/* Project title */
+
+.project_title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+
+/* Project information */
+
+.project_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.project_info p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+/* Live demo */
+
+.live_demo {
+    border: 1px solid black;
+
+    font-size: 15px;
+    font-weight: 100;
+
+    padding: 8px;
+
+    background-color: white;
+    color: #32cd32;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact_section {
+    margin-top: 70px;
+}
+
+.text_container {
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.text_container img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact_section p {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   EMAIL + PHONE
+========================= */
+
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.contain {
+    border: 1px solid black;
+
+    padding: 15px 10px;
+
+    background-color: #f5f5f5;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 20%;
+
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.contain img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media only screen and (min-width: 1200px) {
+
+    .pad {
+        padding: 20px 70px;
+    }
+
+    .project {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /*
+       Same height for ALL project
+       images including Warden.
+    */
+
+    .project_pics_one,
+    .project_pics_two {
+        width: 100%;
+        height: 210px;
+        object-fit: contain;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media only screen and (max-width: 1100px) {
+
+    .know_me {
+        gap: 40px;
+    }
+
+    .img_size {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text_style {
+        font-size: 40px;
+    }
+
+
+    /* Two projects per row */
+
+    .project {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+    }
+
+    .project_pics_one,
+    .project_pics_two {
+        width: 100%;
+        height: 210px;
+        object-fit: contain;
+    }
+
+
+    /* Contact boxes */
+
+    .contain {
+        width: 40%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media only screen and (max-width: 700px) {
+
+    .pad {
+        padding: 20px 15px;
+    }
+
+
+    /* =====================
+       HEADER
+    ===================== */
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .social_links {
+        gap: 12px;
+    }
+
+    .social_links img {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* =====================
+       INTRO
+    ===================== */
+
+    .know_me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .profile_image_container {
+        width: 100%;
+    }
+
+    .img_size {
+        width: min(100%, 330px);
+        height: 330px;
+
+        margin: 0 auto;
+    }
+
+    .intro_content {
+        width: 100%;
+    }
+
+    .text_style {
+        font-size: clamp(32px, 9vw, 45px);
+    }
+
+    .intro_text {
+        font-size: 15px;
+    }
+
+
+    /* =====================
+       BUTTONS
+    ===================== */
+
+    .buttons {
+        justify-content: center;
+    }
+
+    #scrollBtn {
+        width: auto;
+    }
+
+
+    /* =====================
+       SKILLS
+    ===================== */
+
+    .skills {
+        gap: 10px;
+    }
+
+    .skill {
+        padding: 10px 15px;
+    }
+
+
+    /* =====================
+       ABOUT
+    ===================== */
+
+    .sat {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+    }
+
+    .about_stats {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .about_stats p {
+        font-size: 13px;
+    }
+
+
+    /* =====================
+       PROJECTS
+    ===================== */
+
+    .project {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        justify-content: start;
+        justify-items: start;
+    }
+
+    .project_card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    /*
+       Keep all project images
+       the same size on mobile.
+    */
+
+    .project_pics_one,
+    .project_pics_two {
+        width: 100%;
+        height: 210px;
+
+        object-fit: contain;
+        object-position: center;
+
+        background-color: black;
+    }
+
+
+    /* =====================
+       CONTACT
+    ===================== */
+
+    .contact_section {
+        margin-top: 60px;
+    }
+
+
+    /*
+       Make email and phone
+       normal full-width boxes.
+    */
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 12px;
+
+        margin-top: 30px;
+    }
+
+    .contain {
+        width: 100%;
+
+        min-height: 50px;
+
+        padding: 14px 15px;
+
+        justify-content: center;
+
+        border-radius: 5px;
+
+        font-size: 14px;
+
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media only screen and (max-width: 400px) {
+
+    .text_style {
+        font-size: 30px;
+    }
+
+    .img_size {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    /* About */
+
+    .about_stats {
+        gap: 10px;
+    }
+
+    .about_stats p {
+        font-size: 11px;
+    }
+
+    .abt_me {
+        font-size: 26px;
+    }
+
+    .orange {
+        font-size: 25px;
+    }
+
+
+    /* Projects */
+
+    .project_card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .project_pics_one,
+    .project_pics_two {
+        width: 100%;
+        height: 190px;
+
+        object-fit: contain;
+    }
+
+
+    /* Contact */
+
+    .contain {
+        width: 100%;
+        font-size: 13px;
+        padding: 13px 10px;
+    }
+}
